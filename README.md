@@ -1,16 +1,18 @@
-## Hi there 👋
+### Hi, I'm phasorix 👋
 
-<!--
-**phasorix/phasorix** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🎓 Student of **RTU MIREA**, Institute of Radioelectronics and Computer Science. 
+📡 Field of study: **Radio Informatics, Monitoring and Telemetry**. 
+🔬 I'm interested in PCB development, FPGA programming (Verilog/VHDL), physics, and mathematics.
 
-Here are some ideas to get you started:
+#### 🛠 Technologies
+- Languages: Verilog, VHDL, Python, MATLAB
+- CAD: Delta Design, КОМПАС-3D, KiCad, Altium Designer
+- Platforms: Xilinx, Intel (Altera) FPGA
+- Scientific tools: LaTeX, Wolfram Mathematica
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+#### 📂 My projects
+- [Link to the article: "INTEGRAL ASSESSMENT OF DEFORMATION IN MODEL PRINTING: FROM POINT TO VOLUME"]()
+- [Link to the PCB project]()
+
+#### 📫 Contact
+- Email: phasorix1001@gmail.com
