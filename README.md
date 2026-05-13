@@ -11,8 +11,11 @@
 - Scientific tools: LaTeX, Wolfram Mathematica
 
 #### 📂 My projects
+- 📜 Scientific articles:
 - [Link to the article: "INTEGRAL ASSESSMENT OF DEFORMATION IN MODEL PRINTING: FROM POINT TO VOLUME"]()
+- 📐 PCBs:
 - [Link to the PCB project]()
+- 🧠 FPGAs: 
 
 #### 📫 Contact
 - Email: phasorix1001@gmail.com
