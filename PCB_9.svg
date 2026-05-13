@@ -1,0 +1,293 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <pattern id="pcbGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#183d2c" stroke-width="1" stroke-opacity="0.6"/>
+    </pattern>
+
+    <radialGradient id="ironGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffea00" stop-opacity="1"/>
+      <stop offset="30%" stop-color="#ff9d00" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ff5e00" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="solderGrad" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="40%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#475569" />
+    </radialGradient>
+
+    <style>
+      @keyframes ironMove {
+        0% { transform: translate(20px, 450px); }
+        15% { transform: translate(160px, 375px); }
+        40% { transform: translate(160px, 375px); }
+        55% { transform: translate(260px, 375px); }
+        80% { transform: translate(260px, 375px); }
+        100% { transform: translate(20px, 450px); }
+      }
+      
+      .soldering-iron {
+        animation: ironMove 12s ease-in-out infinite;
+        transform-origin: 0px 0px;
+      }
+
+      /* Свечение паяльника (остаётся, это нагрев) */
+      @keyframes glowLeft {
+        0%, 15% { opacity: 0; }
+        18% { opacity: 0.8; }
+        60% { opacity: 0.8; }
+        65% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .glow-left {
+        animation: glowLeft 12s ease-in-out infinite;
+      }
+
+      @keyframes glowRight {
+        0%, 55% { opacity: 0; }
+        58% { opacity: 0.8; }
+        90% { opacity: 0.8; }
+        95% { opacity: 0; }
+        100% { opacity: 0; }
+      }
+      .glow-right {
+        animation: glowRight 12s ease-in-out infinite;
+      }
+
+      /* Дым (остаётся как эффект нагрева) */
+      @keyframes smokeLeft {
+        0%, 16% { opacity: 0; transform: translate(0px, 0px) scale(0.5); }
+        18% { opacity: 0.6; transform: translate(-3px, -10px) scale(1); }
+        23% { opacity: 0.5; transform: translate(-10px, -25px) scale(1.4); }
+        28% { opacity: 0.3; transform: translate(-18px, -45px) scale(1.8); }
+        35% { opacity: 0; transform: translate(-25px, -70px) scale(2.2); }
+        100% { opacity: 0; transform: translate(0px, 0px) scale(0.5); }
+      }
+      .smoke-1-left {
+        animation: smokeLeft 12s ease-out infinite;
+      }
+
+      @keyframes smokeLeft2 {
+        0%, 17% { opacity: 0; transform: translate(0px, 0px) scale(0.5); }
+        19% { opacity: 0.5; transform: translate(4px, -8px) scale(1); }
+        24% { opacity: 0.4; transform: translate(8px, -20px) scale(1.3); }
+        29% { opacity: 0.2; transform: translate(12px, -40px) scale(1.7); }
+        36% { opacity: 0; transform: translate(18px, -60px) scale(2); }
+        100% { opacity: 0; transform: translate(0px, 0px) scale(0.5); }
+      }
+      .smoke-2-left {
+        animation: smokeLeft2 12s ease-out infinite;
+      }
+
+      @keyframes smokeRight {
+        0%, 56% { opacity: 0; transform: translate(0px, 0px) scale(0.5); }
+        58% { opacity: 0.6; transform: translate(-3px, -10px) scale(1); }
+        63% { opacity: 0.5; transform: translate(-10px, -25px) scale(1.4); }
+        68% { opacity: 0.3; transform: translate(-18px, -45px) scale(1.8); }
+        75% { opacity: 0; transform: translate(-25px, -70px) scale(2.2); }
+        100% { opacity: 0; transform: translate(0px, 0px) scale(0.5); }
+      }
+      .smoke-1-right {
+        animation: smokeRight 12s ease-out infinite;
+      }
+
+      @keyframes smokeRight2 {
+        0%, 57% { opacity: 0; transform: translate(0px, 0px) scale(0.5); }
+        59% { opacity: 0.5; transform: translate(4px, -8px) scale(1); }
+        64% { opacity: 0.4; transform: translate(8px, -20px) scale(1.3); }
+        69% { opacity: 0.2; transform: translate(12px, -40px) scale(1.7); }
+        76% { opacity: 0; transform: translate(18px, -60px) scale(2); }
+        100% { opacity: 0; transform: translate(0px, 0px) scale(0.5); }
+      }
+      .smoke-2-right {
+        animation: smokeRight2 12s ease-out infinite;
+      }
+
+      /* Припой (слева) */
+      @keyframes solderLeft {
+        0%, 20% { r: 0px; opacity: 0; }
+        22% { r: 6px; opacity: 1; fill: #fbbf24; }
+        35% { r: 5px; opacity: 1; fill: #fbbf24; }
+        40% { r: 4.5px; opacity: 1; fill: url(#solderGrad); }
+        60% { r: 4.5px; opacity: 1; fill: url(#solderGrad); }
+        65% { r: 0px; opacity: 0; fill: url(#solderGrad); }
+        100% { r: 0px; opacity: 0; }
+      }
+      .solder-left {
+        animation: solderLeft 12s ease-in-out infinite;
+      }
+
+      @keyframes solderRight {
+        0%, 58% { r: 0px; opacity: 0; }
+        60% { r: 6px; opacity: 1; fill: #fbbf24; }
+        73% { r: 5px; opacity: 1; fill: #fbbf24; }
+        78% { r: 4.5px; opacity: 1; fill: url(#solderGrad); }
+        90% { r: 4.5px; opacity: 1; fill: url(#solderGrad); }
+        95% { r: 0px; opacity: 0; fill: url(#solderGrad); }
+        100% { r: 0px; opacity: 0; }
+      }
+      .solder-right {
+        animation: solderRight 12s ease-in-out infinite;
+      }
+
+      /* Контактные площадки (место пайки) - исчезают вместе с припоем */
+      @keyframes padLeft {
+        0%, 60% { opacity: 1; }
+        65% { opacity: 0; }  /* Исчезает вместе с solder-left */
+        100% { opacity: 0; }
+      }
+      .pad-left {
+        animation: padLeft 12s ease-in-out infinite;
+      }
+
+      @keyframes padRight {
+        0%, 90% { opacity: 1; }
+        95% { opacity: 0; }  /* Исчезает вместе с solder-right */
+        100% { opacity: 0; }
+      }
+      .pad-right {
+        animation: padRight 12s ease-in-out infinite;
+      }
+    </style>
+  </defs>
+
+  <!-- Темный фон -->
+  <rect width="100%" height="100%" fill="#0d1117" />
+
+  <!-- Основа платы -->
+  <rect x="40" y="40" width="420" height="420" rx="15" fill="#0f5a3e" />
+  <rect x="40" y="40" width="420" height="420" rx="15" fill="url(#pcbGrid)" />
+  <rect x="40" y="40" width="420" height="420" rx="15" fill="none" stroke="#0a3d2c" stroke-width="6" />
+
+  <!-- Шелкография -->
+  <g fill="none" stroke="#e2e8f0" stroke-width="2" stroke-opacity="0.6">
+    <rect x="165" y="125" width="110" height="110" rx="4" />
+    <rect x="355" y="355" width="70" height="70" rx="4" />
+    <line x1="310" y1="85" x2="370" y2="85" />
+    <line x1="310" y1="215" x2="370" y2="215" />
+  </g>
+
+  <!-- Компоненты (Разъемы) -->
+  <g fill="#2d2d44" stroke="#4a4a6a" stroke-width="3" rx="3">
+    <rect x="50" y="120" width="30" height="50" />
+    <rect x="50" y="190" width="30" height="50" />
+    <line x1="60" y1="125" x2="60" y2="165" stroke="#6b6b9a" stroke-width="2" />
+    <line x1="70" y1="125" x2="70" y2="165" stroke="#6b6b9a" stroke-width="2" />
+    <line x1="60" y1="195" x2="60" y2="235" stroke="#6b6b9a" stroke-width="2" />
+    <line x1="70" y1="195" x2="70" y2="235" stroke="#6b6b9a" stroke-width="2" />
+  </g>
+
+  <!-- Компоненты (Конденсаторы) -->
+  <g fill="#1e88e5" stroke="#0d47a1" stroke-width="3" rx="8">
+    <rect x="310" y="90" width="20" height="120" />
+    <rect x="350" y="90" width="20" height="120" />
+  </g>
+
+  <!-- Компоненты (Микросхема) -->
+  <g>
+    <rect x="360" y="360" width="60" height="60" rx="4" fill="#1e1e1e" stroke="#4a4a4a" stroke-width="3" />
+    <g fill="none" stroke="#a0a0a0" stroke-width="3">
+      <path d="M 360 370 L 340 370 M 360 385 L 340 385 M 360 400 L 340 400 M 360 415 L 340 415" />
+      <path d="M 390 360 L 390 340 M 405 360 L 405 340 M 420 360 L 420 340" />
+    </g>
+    <circle cx="370" cy="370" r="2" fill="#666" />
+  </g>
+
+  <!-- Компоненты (Светодиоды и резисторы) -->
+  <g>
+    <circle cx="120" cy="340" r="10" fill="#1e88e5" stroke="#0d47a1" stroke-width="3" />
+    <circle cx="120" cy="380" r="10" fill="#1e88e5" stroke="#0d47a1" stroke-width="3" />
+    
+    <rect x="160" y="330" width="100" height="20" rx="8" fill="#8d6e63" stroke="#4e342e" stroke-width="3" />
+    <rect x="160" y="370" width="100" height="20" rx="8" fill="#8d6e63" stroke="#4e342e" stroke-width="3" />
+    
+    <!-- Контактные площадки с правильной анимацией -->
+    <circle class="pad-left" cx="160" cy="380" r="5" fill="#d4a373" stroke="#b87333" stroke-width="1" />
+    <circle class="pad-right" cx="260" cy="380" r="5" fill="#d4a373" stroke="#b87333" stroke-width="1" />
+  </g>
+
+  <!-- Разъемы справа -->
+  <g fill="none" stroke="#a0a0a0" stroke-width="5">
+    <line x1="420" y1="100" x2="420" y2="180" />
+    <line x1="435" y1="100" x2="435" y2="180" />
+  </g>
+
+  <!-- ЦПУ -->
+  <g>
+    <rect x="170" y="130" width="100" height="100" rx="6" fill="#1c1c1c" stroke="#4a4a4a" stroke-width="4" />
+    <rect x="185" y="145" width="70" height="70" rx="3" fill="#0f0f0f" stroke="#666" stroke-width="3" />
+    <g fill="none" stroke="#888" stroke-width="3">
+      <line x1="185" y1="130" x2="185" y2="115" />
+      <line x1="200" y1="130" x2="200" y2="115" />
+      <line x1="215" y1="130" x2="215" y2="115" />
+      <line x1="230" y1="130" x2="230" y2="115" />
+      <line x1="245" y1="130" x2="245" y2="115" />
+      <line x1="260" y1="130" x2="260" y2="115" />
+      <line x1="170" y1="145" x2="155" y2="145" />
+      <line x1="170" y1="160" x2="155" y2="160" />
+      <line x1="170" y1="175" x2="155" y2="175" />
+      <line x1="170" y1="190" x2="155" y2="190" />
+      <line x1="170" y1="205" x2="155" y2="205" />
+      <line x1="185" y1="230" x2="185" y2="245" />
+      <line x1="200" y1="230" x2="200" y2="245" />
+      <line x1="215" y1="230" x2="215" y2="245" />
+      <line x1="230" y1="230" x2="230" y2="245" />
+      <line x1="245" y1="230" x2="245" y2="245" />
+      <line x1="260" y1="230" x2="260" y2="245" />
+      <line x1="270" y1="145" x2="285" y2="145" />
+      <line x1="270" y1="160" x2="285" y2="160" />
+      <line x1="270" y1="175" x2="285" y2="175" />
+      <line x1="270" y1="190" x2="285" y2="190" />
+      <line x1="270" y1="205" x2="285" y2="205" />
+    </g>
+    <rect x="195" y="160" width="50" height="40" rx="2" fill="#2c2c2c" stroke="#555" stroke-width="1" />
+    <circle cx="195" cy="152" r="2" fill="#888" />
+  </g>
+
+  <!-- АНИМАЦИЯ ПАЙКИ -->
+  <g>
+    <g class="soldering-iron">
+      <path d="M -15 -100 C -40 -120, -60 -100, -80 -130 C -100 -160, -120 -140, -150 -150" 
+            fill="none" stroke="#1e293b" stroke-width="6" stroke-linecap="round" />
+      
+      <circle cx="0" cy="0" r="15" class="glow-left" fill="url(#ironGlow)" />
+      <circle cx="0" cy="0" r="15" class="glow-right" fill="url(#ironGlow)" />
+      
+      <rect x="-12" y="-100" width="24" height="60" rx="6" fill="#e11d48" />
+      <rect x="-12" y="-85" width="24" height="10" fill="#be123c" />
+      <rect x="-10" y="-40" width="20" height="20" rx="4" fill="#1e293b" />
+      <rect x="-6" y="-20" width="12" height="15" rx="2" fill="#94a3b8" />
+      <path d="M -3 -5 L 3 -5 L 4 5 L -4 5 Z" fill="#b45309" />
+    </g>
+
+    <!-- Дым -->
+    <g class="smoke-1-left">
+      <circle cx="160" cy="380" r="4" fill="#94a3b8" opacity="0.6" />
+      <circle cx="158" cy="368" r="5" fill="#cbd5e1" opacity="0.5" />
+      <circle cx="154" cy="352" r="7" fill="#94a3b8" opacity="0.3" />
+      <circle cx="148" cy="332" r="10" fill="#cbd5e1" opacity="0.1" />
+    </g>
+    <g class="smoke-2-left">
+      <circle cx="163" cy="378" r="3" fill="#cbd5e1" opacity="0.6" />
+      <circle cx="167" cy="364" r="5" fill="#94a3b8" opacity="0.4" />
+      <circle cx="172" cy="346" r="8" fill="#cbd5e1" opacity="0.2" />
+      <circle cx="178" cy="324" r="11" fill="#94a3b8" opacity="0.1" />
+    </g>
+    <g class="smoke-1-right">
+      <circle cx="260" cy="380" r="4" fill="#94a3b8" opacity="0.6" />
+      <circle cx="258" cy="368" r="5" fill="#cbd5e1" opacity="0.5" />
+      <circle cx="254" cy="352" r="7" fill="#94a3b8" opacity="0.3" />
+      <circle cx="248" cy="332" r="10" fill="#cbd5e1" opacity="0.1" />
+    </g>
+    <g class="smoke-2-right">
+      <circle cx="263" cy="378" r="3" fill="#cbd5e1" opacity="0.6" />
+      <circle cx="267" cy="364" r="5" fill="#94a3b8" opacity="0.4" />
+      <circle cx="272" cy="346" r="8" fill="#cbd5e1" opacity="0.2" />
+      <circle cx="278" cy="324" r="11" fill="#94a3b8" opacity="0.1" />
+    </g>
+
+    <!-- Припой -->
+    <circle class="solder-left" cx="160" cy="380" />
+    <circle class="solder-right" cx="260" cy="380" />
+  </g>
+</svg>
