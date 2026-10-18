@@ -32,7 +32,7 @@
 ### <img src="https://api.iconify.design/tabler/microscope.svg?color=%238b949e" width="20" align="center"/> Научная работа
 
 **Интегральная оценка деформации при печати модели: от точки к объёму**  
-*Журнал / конференция, год* · [PDF](https://github.com/phasorix/phasorix/blob/main/9_Павлова_Аксенченко_статья_Интегральная_оценка_2.pdf)  
+*Журнал / конференция, год* · [PDF](https://github.com/phasorix/phasorix/blob/main/papers/9_Павлова_Аксенченко_статья_Интегральная_оценка_2.pdf)  
 `3D-печать` `деформация` `усадка` `ABS-пластик`
 
 ---
