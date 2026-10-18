@@ -37,6 +37,11 @@
 [eLibrary](https://elibrary.ru/item.asp?id=91258557) · EDN: CHEWFI · РИНЦ · [PDF](https://github.com/phasorix/phasorix/blob/main/papers/2026_integral-deformation-3d-printing.pdf)  
 `3D-печать` `деформация` `усадка` `ABS-пластик` `интегральная оценка` `математическое моделирование`
 
+**Институциональные и структурные причины технологического разрыва в микроэлектронике между СССР и США**  
+Аксенченко А.А., Ковалевская М.П.  
+УДК 94(47+73):621.38 · [PDF](https://github.com/phasorix/phasorix/blob/main/papers/Institutsionalnye_i_strukturnye_prichiny_tekhnologicheskogo_razryva_v_mikroelektronike_mezhdu_SSSR_i_SShA.pdf)  
+`микроэлектроника` `технологический разрыв` `СССР и США` `копирование архитектур` `холодная война` `экономическая изоляция`
+
 ---
 
 ### <img src="https://api.iconify.design/tabler/school.svg?color=%238b949e" width="20" align="center"/> Учебные работы
