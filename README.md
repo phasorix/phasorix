@@ -52,4 +52,3 @@
 |---|---|---|
 | Ознакомительная практика | [Отчёт по практике в АО «НПП «Пульсар»: тепловое моделирование РЭС](https://github.com/phasorix/phasorix/blob/main/university/Otchet_oznakomitelnaya_praktika.pdf) | ANSYS Icepak, ANSYS Fluent, Gambit, DavisTest, AliceFlow, Altium Designer, Proteus |
 | Начертательная геометрия, инженерная и компьютерная графика | [Курсовая работа: разработка технической документации и создание 3D-моделей печатной платы и устройства «Усилитель мощности КВ-сигнала»](https://github.com/phasorix/phasorix/blob/main/university/Razrabotka_tekhnicheskoy_dokumentatsii_i_sozdanie_3D_modeli_pechatnoy_platy_ustroystva_Usilitel_moshchnosti_KV_signala.pdf) | КОМПАС-3D, Altium Designer |
-| Начертательная геометрия, инженерная и компьютерная графика | [Альбом чертежей и текстовых документов](https://github.com/phasorix/phasorix/blob/main/university/Albom_chertezhey.pdf) | КОМПАС-3D |
